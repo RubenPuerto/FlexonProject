@@ -75,6 +75,13 @@ public class Conexion {
     }
    
     
-    
+    public ResultSet getClientes() throws SQLException 
+    {
+    this.con();
+
+    this.consulta=(PreparedStatement) this.con.prepareStatement("select * from cliente");
+    this.datos=this.consulta.executeQuery();
+    return this.datos;
+    }
     
 }

@@ -12,6 +12,8 @@ response.setDateHeader("Expires", 0);
 response.setHeader("Cache-Control", "no-store");
 
 request.getSession().removeAttribute("logueado");
+request.getSession().removeAttribute("UserName");
+request.getSession().removeAttribute("Rol_User");
 
 session.invalidate();
 

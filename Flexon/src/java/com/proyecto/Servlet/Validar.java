@@ -49,7 +49,7 @@ public class Validar extends HttpServlet {
            
         }
         if(contador==1){
-             response.sendRedirect("welcome.jsp");
+             response.sendRedirect("admin.jsp");
         }else{
             request.setAttribute("message", "Usuario Invalido");
             request.getRequestDispatcher("login.jsp")
